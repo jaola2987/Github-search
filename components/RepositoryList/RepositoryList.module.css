@@ -1,0 +1,30 @@
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.listItem {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff91;
+}
+
+.stats {
+  padding: 0px 15px;
+}
+
+.paginationWrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.active {
+  background-color: #03729a;
+  color: white;
+}

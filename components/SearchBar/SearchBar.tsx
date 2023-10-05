@@ -9,7 +9,7 @@ export default function SearchBar() {
 
   console.log("username", username, error);
   return (
-    <div>
+    <div className={style.searchBarWrapper}>
       <input
         className={style.inputField}
         type="text"

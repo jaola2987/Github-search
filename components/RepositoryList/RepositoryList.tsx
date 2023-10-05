@@ -1,10 +1,11 @@
 "use client";
 
+import React from "react";
 import { useFetchProviderContext } from "@/providers/FetchProvider";
 import { useGlobalProviderContext } from "@/providers/GlobalProvider";
 import { Repo } from "@/providers/fetchProvider.interface";
 import Link from "next/link";
-import React from "react";
+import style from "./RepositoryList.module.css";
 
 const reposPerPage: number = 5;
 
@@ -20,17 +21,9 @@ export default function RepositoryList() {
   const paginate = (pageNumber: number) => handleCurrentPage(pageNumber);
   return (
     <>
-      <div>
+      <div className={style.list}>
         {currentRepos?.map((repoItem: Repo) => (
-          <div
-            key={repoItem.id}
-            style={{
-              margin: "20px 0",
-              padding: "10px",
-              border: "1px solid #ddd",
-              borderRadius: "5px",
-            }}
-          >
+          <div key={repoItem.id} className={style.listItem}>
             <h2>
               <Link
                 href={`/${repoItem.name}`}
@@ -38,20 +31,35 @@ export default function RepositoryList() {
               >
                 {repoItem.name}
               </Link>
+              <span className={style.stats}>
+                {!!repos?.length &&
+                  [...Array(repoItem.stargazers_count).fill(0)].map(
+                    (_, index) => (
+                      <span role="img" aria-label="star" key={index}>
+                        ⭐️
+                      </span>
+                    )
+                  )}
+              </span>
             </h2>
             <p>{repoItem.description}</p>
-            <p>⭐️ {repoItem.stargazers_count}</p>
           </div>
         ))}
       </div>
-      {!!repos?.length &&
-        [...Array(Math.ceil(repos?.length / reposPerPage)).keys()].map(
-          (number) => (
-            <button key={number + 1} onClick={() => paginate(number + 1)}>
-              {number + 1}
-            </button>
-          )
-        )}
+      <div className={style.paginationWrapper}>
+        {!!repos?.length &&
+          [...Array(Math.ceil(repos?.length / reposPerPage)).keys()].map(
+            (number, index) => (
+              <button
+                key={number + 1}
+                className={currentPage === number + 1 ? style.active : ""}
+                onClick={() => paginate(number + 1)}
+              >
+                {number + 1}
+              </button>
+            )
+          )}
+      </div>
     </>
   );
 }

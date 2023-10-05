@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub Repository Search
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is a web application that allows users to search for GitHub repositories and view detailed information about them. The application is built with Next.js, Typescript, React Context API, css-modules and uses the GitHub API for data fetching.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application is deployed on Vercel / Onrender.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Search functionality: Users can enter a GitHub username to fetch and display a list of repositories associated with that user.
+- Repository List: Displays the repository list, showing the repository name, description, and the number of stars.
+- Repository Details: When a user clicks on a repository in the list, it displays detailed information about that repository including the repository’s name, description, owner’s username, number of stars, and a link to the repository on GitHub.
+- Error handling: Implemented error handling for API calls and display appropriate error messages.
+- Pagination: Added pagination to the repository list. Displays a limited number of repositories per page and allows users to navigate between pages
 
-## Learn More
+## How to Run Locally
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies with `npm install`.
+4. Start the development server with `npm run dev`.
+5. Open http://localhost:3000 to view it in the browser.
+6. Run tests with `npm test`.

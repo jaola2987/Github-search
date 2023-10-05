@@ -1,0 +1,28 @@
+.inputField {
+  height: 30px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  background: var(--secondary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  min-width: 400px;
+}
+
+.inputField::-webkit-inner-spin-button {
+  display: none;
+}
+
+.inputField:hover {
+  border-color: var(--dark-color);
+}
+
+.inputField:focus,
+.inputField:active {
+  border-color: var(--primary-color);
+}
+
+.errorMessage {
+  color: red;
+  padding: 10px;
+}

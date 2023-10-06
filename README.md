@@ -6,7 +6,7 @@ This is a web application that allows users to search for GitHub repositories an
 
 ## Live Demo
 
-The application is deployed on Vercel https://github-search-lsgqqu1zu-volha-ivanovas-projects.vercel.app/.
+The application is deployed on [Vercel](https://github-search-lsgqqu1zu-volha-ivanovas-projects.vercel.app/).
 
 ## Features
 
@@ -16,6 +16,8 @@ The application is deployed on Vercel https://github-search-lsgqqu1zu-volha-ivan
 - Error handling: Implemented error handling for API calls and display appropriate error messages.
 - Pagination: Added pagination to the repository list. Displays a limited number of repositories per page and allows users to navigate between pages
 
+Learn more in [technical documentation] (https://github.com/jaola2987/Github-search/blob/main/Technical%20documentation.md).
+
 ## How to Run Locally
 
 1. Clone the repository to your local machine.
@@ -24,3 +26,5 @@ The application is deployed on Vercel https://github-search-lsgqqu1zu-volha-ivan
 4. Start the development server with `npm run dev`.
 5. Open http://localhost:3000 to view it in the browser.
 6. Run tests with `npm test`.
+
+# [Roadmap] (https://github.com/jaola2987/Github-search/blob/main/ROADMAP.md)

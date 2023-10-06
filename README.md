@@ -6,7 +6,7 @@ This is a web application that allows users to search for GitHub repositories an
 
 ## Live Demo
 
-The application is deployed on Vercel / Onrender.
+The application is deployed on Vercel https://github-search-lsgqqu1zu-volha-ivanovas-projects.vercel.app/.
 
 ## Features
 

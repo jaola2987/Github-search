@@ -3,9 +3,8 @@
 ## Enhancements:
 
 1. **Performance Optimization**: Implement lazy loading for the repository list to improve performance and user experience.
-2. **Responsive Design**: Make the application responsive so it looks good on all devices.
-3. **Dark Mode**: Implement a dark mode for better accessibility and user preference.
-4. **Modern Design**: Apply a modern and attractive design to the application. Use colors, fonts, icons, and animations that enhance the user interface and user experience.
+2. **Dark Mode**: Implement a dark mode for better accessibility and user preference.
+3. **Modern Design**: Apply a modern and attractive design to the application. Use colors, fonts, icons, and animations that enhance the user interface and user experience.
 
 ## New Features:
 

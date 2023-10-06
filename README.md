@@ -16,7 +16,7 @@ The application is deployed on [Vercel](https://github-search-lsgqqu1zu-volha-iv
 - Error handling: Implemented error handling for API calls and display appropriate error messages.
 - Pagination: Added pagination to the repository list. Displays a limited number of repositories per page and allows users to navigate between pages
 
-Learn more in [technical documentation] (https://github.com/jaola2987/Github-search/blob/main/Technical%20documentation.md).
+Learn more in [technical documentation](https://github.com/jaola2987/Github-search/blob/main/Technical%20documentation.md).
 
 ## How to Run Locally
 
@@ -27,4 +27,4 @@ Learn more in [technical documentation] (https://github.com/jaola2987/Github-sea
 5. Open http://localhost:3000 to view it in the browser.
 6. Run tests with `npm test`.
 
-# [Roadmap] (https://github.com/jaola2987/Github-search/blob/main/ROADMAP.md)
+# [Roadmap](https://github.com/jaola2987/Github-search/blob/main/ROADMAP.md)
